@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chareset ="UTF_8">
+    <link rel="icon" href="css.png">
+    <title> Flex Sample</title>
+    <style>
+        body{
+            padding: 2em;
+        }
+        .header-container{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px
+        }
+        .main-container{
+            display: flex;
+            flex-flow: row;
+            font-weight: bold;
+            text-align: center;
+        }
+        .mainContainerItem{
+            order: 2;
+            flex: 3 0px;
+            text-align: left;
+            background-color: deepskyblue;
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .LeftSideBar{
+            order:1;
+            background-color: gold;
+        }
+        .RightSideBar{
+            order:3;
+            background-color: hotpink;
+        }
+        .footer-container{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: Lightgreen;
+            font-weight: bold;
+            padding: 10px
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+        }
+        .sideBarItem{
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+
+    </style>
+</head> 
+<body>
+    <header class ="header-container"> <h1> HEADER - FLEX SAMPLE</h1></header>
+    <div class="main-container">
+        <section class="mainContainerItem"></p> 
+        <article>
+           <div>
+               FIRST ARTICLE
+               <p> JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. </p>
+           </div> 
+        </article>
+        <article>
+            <h2>
+                SECOND  ARTICLE
+                <p> Microsoft debuted Internet Explorer in 1995, leading to a browser war with Netscape. On the JavaScript front, Microsoft reverse-engineered the Navigator interpreter to create its own, called JScript. </p>
+            </h2> 
+         </article>
+         <article>
+            <h2>
+                THIRD  ARTICLE
+                <p>During the period of Internet Explorer dominance in the early 2000s, client-side scripting was stagnant. This started to change in 2004, when the successor of Netscape, Mozilla, released the Firefox browser. Firefox was well received by many, taking significant market share from Internet Explorer.</p>
+            </h2> 
+         </article>
+        </section>
+        <sidebar class="LeftSideBar sideBarItem"> <div class="center"><p> LEFT SIDE BAR</p> </div></sidebar>
+        <sideBar class="RightSideBar sideBarItem"> <div class="center"><p> RIGHT SIDE BAR</p> </div></sideBar>
+    </div>
+    <footer class="footer-container"> FOOTER </footer>
+</body>   
+</html>

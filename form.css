@@ -1,0 +1,50 @@
+body{
+    background-image: url("formbg.jpg");
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+header{
+   font-family: cursive;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(143, 73, 209);
+    margin-top: 100px;
+    padding: 10px;
+    align-content: center;
+}
+form{
+    font-family: initial;
+    font-size: 20px;
+    background-color: rgb(238, 117, 218);
+    padding: 50px;
+}
+div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items:center ;
+    margin: 10px;
+    padding: 5px;
+}
+label{
+    margin-left: 10%;
+    text-align:center;
+    font-size: 25px;
+    
+
+}
+input{
+  
+    font-family:initial;
+    font-size: 15px;
+    background-color: rgb(204, 230, 163);
+    padding: 5px;
+    line-height: 10px;
+}
+button{
+    margin-left: 50%;
+    margin-top: 5%;
+    line-height: 200%;
+}
